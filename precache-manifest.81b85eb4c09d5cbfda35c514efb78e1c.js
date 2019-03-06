@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/upgrad/static/js/runtime~main.5bdf4c73.js"
   },
   {
-    "revision": "9b3b0c1950bb2ebd2f3d",
-    "url": "/upgrad/static/js/main.9b3b0c19.chunk.js"
+    "revision": "a0e1d2b49b69462645b0",
+    "url": "/upgrad/static/js/main.a0e1d2b4.chunk.js"
   },
   {
     "revision": "b6306bdf11b2c4c13c11",
     "url": "/upgrad/static/js/2.b6306bdf.chunk.js"
   },
   {
-    "revision": "9b3b0c1950bb2ebd2f3d",
+    "revision": "a0e1d2b49b69462645b0",
     "url": "/upgrad/static/css/main.6135b665.chunk.css"
   },
   {
-    "revision": "8551019a2696fcaaf0d5348cea30ed4a",
+    "revision": "0c36f5caa12c5a2f08f1f2d1d8f32a38",
     "url": "/upgrad/index.html"
   }
 ];
