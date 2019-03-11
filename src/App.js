@@ -12,7 +12,7 @@ class App extends Component {
       <ContactProvider>
       <div className="container">
          <Header/>
-        <BrowserRouter>
+        <BrowserRouter basename = {process.env.PUBLIC_URL}>
         <React.Fragment>
           <Route exact path = "/" component = {Home}/>
           <Route exact path = "/add" component = {Add}/>

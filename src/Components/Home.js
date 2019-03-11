@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "./Button";
 import Contacts from "./Contacts";
 import { ContactContext } from "../Context/ContactContext";
-
+import "../css/Home.css";
  class Home extends Component {
   // State of the Application
   onClick = (e) => {

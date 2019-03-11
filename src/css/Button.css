@@ -1,0 +1,67 @@
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  height: 6rem;
+  width: 16rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.btn__text {
+  font-size: 1.6rem;
+  color: blue;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.delete {
+  height: 5rem;
+  width: 10rem;
+}
+
+.delete__text {
+  color: red;
+}
+
+
+@media only screen and (max-width: 50em) {
+  .btn {
+    height: 4rem;
+    width: 8rem;
+    padding : .3rem .2rem;
+  }
+  .btn__text {
+    font-size: 0.6rem;
+  }
+  .delete {
+    height: 4rem;
+    width: 8rem;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 75em) {
+  .btn {
+    height: 4rem;
+    width: 12rem;
+  }
+  .btn__text {
+    font-size: 0.9rem;
+  }
+  .delete {
+    height: 4rem;
+    width: 10rem;
+  }
+}

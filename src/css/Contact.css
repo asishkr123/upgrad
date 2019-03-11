@@ -1,0 +1,28 @@
+.contact {
+  margin: 3rem auto;
+  height: 15rem;
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact__text{
+  font-size: 2.3rem;
+  color :  blue;
+  font-weight:  200;
+}
+
+
+@media only screen and (max-width: 75em) {
+     .contact__text{
+        font-size: 1.4rem;
+     }
+}

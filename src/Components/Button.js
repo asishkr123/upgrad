@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import "../css/Button.css"
 export default function Button(props) {
 // props are buttonText and OnClickFunction;    
 const onButtonClick = (e) =>{

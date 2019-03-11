@@ -3,12 +3,13 @@ import Button from "./Button";
 import { ContactContext } from "../Context/ContactContext";
 import { withRouter } from "react-router-dom";
 import uuid from "uuid/v1";
+import "../css/Form.css";
 class Form extends Component {
- state = {
-     name : "",
-     number : "",
-     error : ""
- }
+  state = {
+    name: "",
+    number: "",
+    error: ""
+  };
 
   onChange = e => {
     this.setState({
@@ -16,41 +17,40 @@ class Form extends Component {
     });
   };
   onBackButtonClick = () => {
-     this.props.history.push('/');
-  }
+    this.props.history.push("/");
+  };
   onSubmit = () => {
     const data = {
       name: this.state.name,
       number: this.state.number,
       id: uuid()
     };
-    if(!this.state.name || !this.state.number){
-        this.setState({
-           error : "the Fields Cannot Be Left Empty"
-        })
-    }else {
-    this.context.addContact(data);
-    this.props.history.push("/");
+    if (!this.state.name || !this.state.number) {
+      this.setState({
+        error: "the Fields Cannot Be Left Empty"
+      });
+    } else {
+      this.context.addContact(data);
+      this.props.history.push("/");
     }
-    
   };
   render() {
     return (
       <React.Fragment>
-        <Button buttonText = "Go Back" clickFunc = {this.onBackButtonClick}/>
+        <Button buttonText="Go Back" clickFunc={this.onBackButtonClick} />
         <div
           className="heading"
           style={{ fontSize: "2rem", color: "blue", textAlign: "center" }}
         >
           Add Contact Here
         </div>
-        <form className = "form">
-        <div className="form__values">
+        <form className="form">
+          <div className="form__values">
             <label htmlFor="name" className="form__label">
               Name
             </label>
             <input
-              className="form__input"  
+              className="form__input"
               value={this.state.name}
               name="name"
               type="text"
@@ -62,7 +62,7 @@ class Form extends Component {
               Number
             </label>
             <input
-              className="form__input"  
+              className="form__input"
               value={this.state.number}
               name="number"
               type="text"
@@ -73,11 +73,17 @@ class Form extends Component {
         <div className="input__data"> name : {this.state.name}</div>
         <div className="input__data"> number : {this.state.number}</div>
         <Button clickFunc={this.onSubmit} buttonText="Add Contact" />
-        {this.state.error ? <span className="error">{this.state.error}</span> : ""}
+        {this.state.error ? (
+          <span className="error">{this.state.error}</span>
+        ) : (
+          ""
+        )}
       </React.Fragment>
     );
   }
 }
-
-Form.contextType = ContactContext;
-export default withRouter(Form);
+// warning : Function components do not support contextType.
+// the wrappedClass is a fix for that;
+const WrappedClass = withRouter(Form);
+WrappedClass.WrappedComponent.contextType = ContactContext;
+export default WrappedClass;

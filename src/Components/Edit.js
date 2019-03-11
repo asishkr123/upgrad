@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { ContactContext } from "../Context/ContactContext";
 import Button from './Button';
+import "../css/Form.css";
 class Edit extends Component {
   state = {
     name : "",
@@ -36,7 +37,6 @@ class Edit extends Component {
     })
 } 
   render() {
-    console.log(this.state.name)  
     return (
       <div className="form__container">
         
