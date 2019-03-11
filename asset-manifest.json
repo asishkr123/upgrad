@@ -1,13 +1,13 @@
 {
-  "main.css": "/upgrad/static/css/main.6135b665.chunk.css",
-  "main.js": "/upgrad/static/js/main.a0e1d2b4.chunk.js",
-  "main.js.map": "/upgrad/static/js/main.a0e1d2b4.chunk.js.map",
+  "main.css": "/upgrad/static/css/main.fbaa77e4.chunk.css",
+  "main.js": "/upgrad/static/js/main.24130304.chunk.js",
+  "main.js.map": "/upgrad/static/js/main.24130304.chunk.js.map",
   "runtime~main.js": "/upgrad/static/js/runtime~main.5bdf4c73.js",
   "runtime~main.js.map": "/upgrad/static/js/runtime~main.5bdf4c73.js.map",
-  "static/js/2.b6306bdf.chunk.js": "/upgrad/static/js/2.b6306bdf.chunk.js",
-  "static/js/2.b6306bdf.chunk.js.map": "/upgrad/static/js/2.b6306bdf.chunk.js.map",
+  "static/js/2.28cf9aab.chunk.js": "/upgrad/static/js/2.28cf9aab.chunk.js",
+  "static/js/2.28cf9aab.chunk.js.map": "/upgrad/static/js/2.28cf9aab.chunk.js.map",
   "index.html": "/upgrad/index.html",
-  "precache-manifest.81b85eb4c09d5cbfda35c514efb78e1c.js": "/upgrad/precache-manifest.81b85eb4c09d5cbfda35c514efb78e1c.js",
+  "precache-manifest.476bbd1b8a130f12d963f2f63f008dbc.js": "/upgrad/precache-manifest.476bbd1b8a130f12d963f2f63f008dbc.js",
   "service-worker.js": "/upgrad/service-worker.js",
-  "static/css/main.6135b665.chunk.css.map": "/upgrad/static/css/main.6135b665.chunk.css.map"
+  "static/css/main.fbaa77e4.chunk.css.map": "/upgrad/static/css/main.fbaa77e4.chunk.css.map"
 }
